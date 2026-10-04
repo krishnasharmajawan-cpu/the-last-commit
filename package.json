@@ -1,0 +1,24 @@
+{
+  "name": "the-last-commit",
+  "version": "1.0.0",
+  "description": "The Last Commit - Full Stack Hackathon Platform (Node.js + TypeScript + React)",
+  "main": "server/dist/index.js",
+  "scripts": {
+    "postinstall": "npm --prefix server install && npm --prefix client install",
+    "build": "npm --prefix client run build && npm --prefix server run build",
+    "start": "node server/dist/index.js",
+    "dev:server": "npm --prefix server run dev",
+    "dev:client": "npm --prefix client run dev",
+    "seed": "npm --prefix server run seed"
+  },
+  "keywords": [
+    "hackathon",
+    "react",
+    "nodejs",
+    "typescript",
+    "sqlite",
+    "cyberpunk"
+  ],
+  "author": "Second Year Team",
+  "license": "MIT"
+}
